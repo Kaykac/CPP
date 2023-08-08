@@ -1,3 +1,0 @@
-/home/kaykac/Desktop/oop_Codes/04.01.23/Oop_Lab/cmake-build-debug/CMakeFiles/Opp_Lab.dir
-/home/kaykac/Desktop/oop_Codes/04.01.23/Oop_Lab/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/kaykac/Desktop/oop_Codes/04.01.23/Oop_Lab/cmake-build-debug/CMakeFiles/rebuild_cache.dir
