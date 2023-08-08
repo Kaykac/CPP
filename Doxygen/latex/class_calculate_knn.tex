@@ -1,0 +1,248 @@
+\hypertarget{class_calculate_knn}{}\doxysection{Calculate\+Knn Class Reference}
+\label{class_calculate_knn}\index{CalculateKnn@{CalculateKnn}}
+
+
+{\ttfamily \#include $<$Calculate\+Knn.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef multimap$<$ double, int, less$<$ double $>$ $>$ \mbox{\hyperlink{class_calculate_knn_aa76f9e0451ff34c7b45ac112526301cb}{Mmap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_calculate_knn_afb759bc9c82e6399edcc047fd1cbb5dc}{Calculate\+Knn}} (int a, int b)
+\item 
+void \mbox{\hyperlink{class_calculate_knn_a4c978435e7de5696f5e85cea579f9618}{print\+Vector}} (vector$<$ \mbox{\hyperlink{class_k_n_n}{KNN}} $>$ \&a) const
+\begin{DoxyCompactList}\small\item\em function for printing vectors that type of \char`\"{}\+KNN\char`\"{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_calculate_knn_ac4684c7e547f284359babd5ad3fe67b3}{print\+Map}} (\mbox{\hyperlink{class_calculate_knn_aa76f9e0451ff34c7b45ac112526301cb}{Mmap}} \&a) const
+\begin{DoxyCompactList}\small\item\em function for printing maps \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_calculate_knn_aa5bca372c16725a6f85e8d3b315284d8}{detect\+Id}} (\mbox{\hyperlink{class_calculate_knn_aa76f9e0451ff34c7b45ac112526301cb}{Mmap}} \&a, int k)
+\begin{DoxyCompactList}\small\item\em function for detection category ID \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_calculate_knn_aa76f9e0451ff34c7b45ac112526301cb}{Mmap}} \mbox{\hyperlink{class_calculate_knn_af4555d5066272cd659e2d2c39624db8e}{euc\+Dist}} (vector$<$ \mbox{\hyperlink{class_k_n_n}{KNN}} $>$ \&a, \mbox{\hyperlink{class_k_n_n}{KNN}} \&b)
+\begin{DoxyCompactList}\small\item\em function for calculating euclidean distance \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_calculate_knn_aae8955f76e58bf5016ff25cff472f2c1}{knn}} (vector$<$ \mbox{\hyperlink{class_k_n_n}{KNN}} $>$ \&samples, vector$<$ \mbox{\hyperlink{class_k_n_n}{KNN}} $>$ \&test)
+\begin{DoxyCompactList}\small\item\em most general function for \mbox{\hyperlink{class_k_n_n}{KNN}} algorithm \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_calculate_knn_a0678375e4d6af1017c507c8aa0a25cfc}{setS}} (int a)
+\begin{DoxyCompactList}\small\item\em set function for s \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_calculate_knn_a231f9c0cc1bb170b149bb30865a73377}{getS}} () const
+\begin{DoxyCompactList}\small\item\em get function for return s \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_calculate_knn_af1b3ec67974dc01c2d0f72da8ce7c279}{setT}} (int a)
+\begin{DoxyCompactList}\small\item\em set function for t \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_calculate_knn_a4621c8b5f541dd28389fd70fe81f1be0}{getT}} () const
+\begin{DoxyCompactList}\small\item\em get function for return t \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_k_n_n}{KNN}} \mbox{\hyperlink{class_calculate_knn_a787884820b147135b96d168dd143aa85}{rand\+Samples}} ()
+\begin{DoxyCompactList}\small\item\em function for creating random samples \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_k_n_n}{KNN}} \mbox{\hyperlink{class_calculate_knn_adcf0499c8fae9de7a8af49a1011b8baf}{test\+\_\+func}} ()
+\begin{DoxyCompactList}\small\item\em function for creating test samples \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_calculate_knn_aa76f9e0451ff34c7b45ac112526301cb}\label{class_calculate_knn_aa76f9e0451ff34c7b45ac112526301cb}} 
+\index{CalculateKnn@{CalculateKnn}!Mmap@{Mmap}}
+\index{Mmap@{Mmap}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{Mmap}{Mmap}}
+{\footnotesize\ttfamily typedef multimap$<$double, int, less$<$double$>$ $>$ \mbox{\hyperlink{class_calculate_knn_aa76f9e0451ff34c7b45ac112526301cb}{Calculate\+Knn\+::\+Mmap}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_calculate_knn_afb759bc9c82e6399edcc047fd1cbb5dc}\label{class_calculate_knn_afb759bc9c82e6399edcc047fd1cbb5dc}} 
+\index{CalculateKnn@{CalculateKnn}!CalculateKnn@{CalculateKnn}}
+\index{CalculateKnn@{CalculateKnn}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{CalculateKnn()}{CalculateKnn()}}
+{\footnotesize\ttfamily Calculate\+Knn\+::\+Calculate\+Knn (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+This constructor asks whether to include srand(). Then it creates sample and test groups according to the a and b values with the generate() function. Calls the \mbox{\hyperlink{class_calculate_knn_aae8955f76e58bf5016ff25cff472f2c1}{knn()}} function, which implement the latest knn algorithm. outputs to the terminal at each step. 
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/-\/\texorpdfstring{$>$}{>}number of sample group \\
+\hline
+{\em b} & -\/-\/\texorpdfstring{$>$}{>}number of test group \\
+\hline
+\end{DoxyParams}
+creating vector that storing \mbox{\hyperlink{class_k_n_n}{KNN}} type class for samples
+
+creating vector that storing \mbox{\hyperlink{class_k_n_n}{KNN}} type class for test samples
+
+creating samples vector that x-\/y values are randomly and 1st 10 class\textquotesingle{} ID is 0, 2nd 10 class\textquotesingle{} ID is 1, 3rd 10 class\textquotesingle{} ID is 2, with \textquotesingle{}generate()\textquotesingle{} function
+
+creating test vector that x-\/y values are randomly their ID unknow
+
+\textquotesingle{}\mbox{\hyperlink{class_calculate_knn_aae8955f76e58bf5016ff25cff472f2c1}{knn()}}\textquotesingle{} func. calls those functions in order euc\+Dist, detect\+Id. and calculates the ID according to knn.
+
+test vector insert to end of samples vector.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_calculate_knn_aa5bca372c16725a6f85e8d3b315284d8}\label{class_calculate_knn_aa5bca372c16725a6f85e8d3b315284d8}} 
+\index{CalculateKnn@{CalculateKnn}!detectId@{detectId}}
+\index{detectId@{detectId}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{detectId()}{detectId()}}
+{\footnotesize\ttfamily int Calculate\+Knn\+::detect\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_calculate_knn_aa76f9e0451ff34c7b45ac112526301cb}{Mmap}} \&}]{a,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+function for detection category ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/-\/\texorpdfstring{$>$}{>}map for sorted category ID. \\
+\hline
+{\em k} & -\/-\/\texorpdfstring{$>$}{>}number of neighbors \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/-\/\texorpdfstring{$>$}{>} returning category ID (43 for error detection). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_calculate_knn_af4555d5066272cd659e2d2c39624db8e}\label{class_calculate_knn_af4555d5066272cd659e2d2c39624db8e}} 
+\index{CalculateKnn@{CalculateKnn}!eucDist@{eucDist}}
+\index{eucDist@{eucDist}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{eucDist()}{eucDist()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_calculate_knn_aa76f9e0451ff34c7b45ac112526301cb}{Mmap}} Calculate\+Knn\+::euc\+Dist (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_k_n_n}{KNN}} $>$ \&}]{a,  }\item[{\mbox{\hyperlink{class_k_n_n}{KNN}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+function for calculating euclidean distance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/-\/\texorpdfstring{$>$}{>}first 30 samples \\
+\hline
+{\em b} & -\/-\/\texorpdfstring{$>$}{>}test point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/-\/\texorpdfstring{$>$}{>}map (1st item of map is distance. 2nd item of map is catagory ID.) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_calculate_knn_a231f9c0cc1bb170b149bb30865a73377}\label{class_calculate_knn_a231f9c0cc1bb170b149bb30865a73377}} 
+\index{CalculateKnn@{CalculateKnn}!getS@{getS}}
+\index{getS@{getS}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{getS()}{getS()}}
+{\footnotesize\ttfamily int Calculate\+Knn\+::getS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get function for return s 
+
+\mbox{\Hypertarget{class_calculate_knn_a4621c8b5f541dd28389fd70fe81f1be0}\label{class_calculate_knn_a4621c8b5f541dd28389fd70fe81f1be0}} 
+\index{CalculateKnn@{CalculateKnn}!getT@{getT}}
+\index{getT@{getT}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{getT()}{getT()}}
+{\footnotesize\ttfamily int Calculate\+Knn\+::getT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get function for return t 
+
+\mbox{\Hypertarget{class_calculate_knn_aae8955f76e58bf5016ff25cff472f2c1}\label{class_calculate_knn_aae8955f76e58bf5016ff25cff472f2c1}} 
+\index{CalculateKnn@{CalculateKnn}!knn@{knn}}
+\index{knn@{knn}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{knn()}{knn()}}
+{\footnotesize\ttfamily void Calculate\+Knn\+::knn (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_k_n_n}{KNN}} $>$ \&}]{samples,  }\item[{vector$<$ \mbox{\hyperlink{class_k_n_n}{KNN}} $>$ \&}]{test }\end{DoxyParamCaption})}
+
+
+
+most general function for \mbox{\hyperlink{class_k_n_n}{KNN}} algorithm 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & -\/-\/\texorpdfstring{$>$}{>}samples group \\
+\hline
+{\em test} & -\/-\/\texorpdfstring{$>$}{>}test group \\
+\hline
+\end{DoxyParams}
+Calculates the euclidean distance and return a multimap. (multimap\textquotesingle{}s size is equal to samples vector\textquotesingle{}s size)
+
+Return catagory ID according to n nearest neighbors.
+
+Outputs location and new ID for test.
+
+Assign new category ID.\mbox{\Hypertarget{class_calculate_knn_ac4684c7e547f284359babd5ad3fe67b3}\label{class_calculate_knn_ac4684c7e547f284359babd5ad3fe67b3}} 
+\index{CalculateKnn@{CalculateKnn}!printMap@{printMap}}
+\index{printMap@{printMap}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{printMap()}{printMap()}}
+{\footnotesize\ttfamily void Calculate\+Knn\+::print\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_calculate_knn_aa76f9e0451ff34c7b45ac112526301cb}{Mmap}} \&}]{a }\end{DoxyParamCaption}) const}
+
+
+
+function for printing maps 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/-\/\texorpdfstring{$>$}{>} name of map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_calculate_knn_a4c978435e7de5696f5e85cea579f9618}\label{class_calculate_knn_a4c978435e7de5696f5e85cea579f9618}} 
+\index{CalculateKnn@{CalculateKnn}!printVector@{printVector}}
+\index{printVector@{printVector}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{printVector()}{printVector()}}
+{\footnotesize\ttfamily void Calculate\+Knn\+::print\+Vector (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_k_n_n}{KNN}} $>$ \&}]{a }\end{DoxyParamCaption}) const}
+
+
+
+function for printing vectors that type of \char`\"{}\+KNN\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/-\/\texorpdfstring{$>$}{>}name of vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_calculate_knn_a787884820b147135b96d168dd143aa85}\label{class_calculate_knn_a787884820b147135b96d168dd143aa85}} 
+\index{CalculateKnn@{CalculateKnn}!randSamples@{randSamples}}
+\index{randSamples@{randSamples}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{randSamples()}{randSamples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_n_n}{KNN}} Calculate\+Knn\+::rand\+Samples (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+function for creating random samples 
+
+\begin{DoxyReturn}{Returns}
+-\/-\/\texorpdfstring{$>$}{>}returning test points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_calculate_knn_a0678375e4d6af1017c507c8aa0a25cfc}\label{class_calculate_knn_a0678375e4d6af1017c507c8aa0a25cfc}} 
+\index{CalculateKnn@{CalculateKnn}!setS@{setS}}
+\index{setS@{setS}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{setS()}{setS()}}
+{\footnotesize\ttfamily void Calculate\+Knn\+::setS (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+set function for s 
+
+\mbox{\Hypertarget{class_calculate_knn_af1b3ec67974dc01c2d0f72da8ce7c279}\label{class_calculate_knn_af1b3ec67974dc01c2d0f72da8ce7c279}} 
+\index{CalculateKnn@{CalculateKnn}!setT@{setT}}
+\index{setT@{setT}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{setT()}{setT()}}
+{\footnotesize\ttfamily void Calculate\+Knn\+::setT (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+set function for t 
+
+\mbox{\Hypertarget{class_calculate_knn_adcf0499c8fae9de7a8af49a1011b8baf}\label{class_calculate_knn_adcf0499c8fae9de7a8af49a1011b8baf}} 
+\index{CalculateKnn@{CalculateKnn}!test\_func@{test\_func}}
+\index{test\_func@{test\_func}!CalculateKnn@{CalculateKnn}}
+\doxysubsubsection{\texorpdfstring{test\_func()}{test\_func()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_k_n_n}{KNN}} Calculate\+Knn\+::test\+\_\+func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+function for creating test samples 
+
+\begin{DoxyReturn}{Returns}
+-\/-\/\texorpdfstring{$>$}{>}returning samples 
+\end{DoxyReturn}
+43 is invalide number for ID.
+
+random coordinate for x (from -\/5 to 5).
+
+random coordinate for y (from -\/5 to 5).
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_calculate_knn_8h}{Calculate\+Knn.\+h}}\item 
+\mbox{\hyperlink{_calculate_knn_8cpp}{Calculate\+Knn.\+cpp}}\end{DoxyCompactItemize}
